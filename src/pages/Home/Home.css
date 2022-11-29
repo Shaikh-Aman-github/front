@@ -1,0 +1,138 @@
+.Home-page{
+    margin: 50px;
+}
+
+.profile {
+    margin: 5px 20px;
+    height: 30px;
+    width: 30px;
+    background-color: transparent;
+}
+.gradient-border {
+    --borderWidth: 3px;
+    background: transparent;
+    position: relative;
+    border-radius: var(--borderWidth);
+  }
+  .gradient-border:after {
+    content: '';
+    position: absolute;
+    top: calc(-1 * var(--borderWidth));
+    left: calc(-1 * var(--borderWidth));
+    height: calc(100% + var(--borderWidth) * 2);
+    width: calc(100% + var(--borderWidth) * 2);
+    background: linear-gradient(60deg, #f79533, #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad, #07b39b, #6fba82);
+    border-radius: calc(2 * var(--borderWidth));
+    z-index: -1;
+    animation: animatedgradient 3s ease alternate infinite;
+    background-size: 300% 300%;
+  }
+  
+  @keyframes animatedgradient {
+      0% {
+          background-position: 0% 50%;
+      }
+      50% {
+          background-position: 100% 50%;
+      }
+      100% {
+          background-position: 0% 50%;
+      }
+  }
+
+.profile img{
+    height: 100%;
+    width: 100%;
+}
+
+.userInfo #btn-logout{
+    top: 0;
+    right: 0;
+    color: #fff;
+    height: 30px;
+    width: 10px;
+    z-index: 1;
+    position: absolute;
+    padding-right: 0px;
+    background-color: #6360AB;
+    border-radius: 0px 0px 0px 50px;
+}
+.userInfo #btn-logout:hover{
+    color: black;
+    background-color: transparent;
+    transition: 1s;
+}
+
+.Home-page .main-head{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* position: fixed;
+    width: ; */
+}
+.main-head p{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    color: #666;
+}
+.main-head .r-head{
+    display: flex;
+    flex-wrap: wrap;
+}
+.main-head .r-head .btn-add{
+    background: #6360AB;
+    padding: 5px 10px;
+    border-radius: 4px;
+    border-color: transparent;
+    color: #fff;
+    outline: none;
+    margin-left: 20px;
+    cursor: pointer;
+}
+.main-head .r-head .btn-add:hover{
+    background: transparent;
+    border-color: #6360AB;
+    color: #6360AB;
+}
+
+.main-head .r-head #btn-del{
+    background: #fff;
+    padding: 5px 10px;
+    border-radius: 4px;
+    border: 1px solid #6360AB;
+    color: #6360AB;
+    outline: none;
+    margin-left: 20px;
+    cursor: pointer;
+}
+.main-head .r-head #btn-del:hover{
+    background: #6360AB;
+    border-color: transparent;
+    color: #fff;
+}
+
+.Home-body #upload{ 
+    margin: 10px auto;
+    text-align: center;
+    font-size: 16px;
+    line-height: 16px;
+}
+
+
+@media (max-width: 800px) {
+    .Home-page .main-head{
+        text-align: center;
+        flex-direction: column;
+    }
+    .Home-body .upload img{
+        height: 300px;
+        max-width: 300px;
+    }
+    .main-head .r-head{
+    justify-content: center;
+    }
+    .main-head .r-head Button{  
+        margin-top: 10px;
+    }
+  }

@@ -1,0 +1,30 @@
+.Not-page{
+    margin: 10% auto;
+    width: 50%;
+    text-align: center;
+}
+.Not-page .Not-main{
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+}
+.Not-page .Not-main img{
+    width: 150px;
+    height: 206px;
+}
+.Not-page .Not-main .zero-img{
+    width: 200px;
+    height: 290px;
+}
+
+.Not-page Button{
+    background-color: var(--main-color);
+    color: #fff; 
+}
+.Not-page Button:hover{
+    border-color: var(--main-color);
+    background-color: transparent;
+    color: #000;
+}

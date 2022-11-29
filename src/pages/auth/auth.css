@@ -1,0 +1,92 @@
+.SignUp-page {
+    height: 100vh;
+    display: flex;
+    flex-direction: row;    
+}
+  
+.SignUp-page .left{
+  padding: auto;
+  width: 30%;
+  color: #fff;
+  font-family: 'Manrope';
+  font-style: normal;
+  background-image: url('../../assets/auth-bg.png');
+}
+.SignUp-page .left .lcontent{
+  margin: 100px 40px;
+}
+.SignUp-page .left h1{
+  font-weight: 700;
+  font-size: 56px;
+}
+.SignUp-page .left p{
+  font-weight: 500;
+  font-size: 14px;
+}
+.SignUp-page .right{
+  width: 70%;
+  background-color: #fff;
+
+}
+.SignUp-page .right .rcontent{
+  margin: 100px auto 20px 100px;
+}
+.SignUp-page .right .rcontent input{
+  border: 1px solid #DCDCE4;
+  border-radius: 4px;
+  padding: 10px 16px;
+  margin-right: 20px;
+}
+.SignUp-page .right .rcontent label{
+  font-size: 10px;
+line-height: 20px;
+}
+.SignUp-page .rcontent .input-div{
+  display: flex; 
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.SignUp-page .right .rcontent .login-input-rem{
+  display: flex;
+  font-weight: 600;
+  font-size: 10px;
+  line-height: 20px;
+  align-items: center;
+  justify-content:start;
+  gap: 1rem;
+}
+.SignUp-page .right .rcontent .login-input-div{
+  display: flex;
+  flex-direction: column;
+
+}
+
+.SignUp-page .right .sub-btn{
+  background: #6360AB;
+  color: #fff;
+  width: 200px;
+  padding: 10px 100px;
+  font-size: 14px;
+  border-radius: 4px;
+  border-color: transparent;
+  outline: none;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 800px) {
+  .SignUp-page {
+    flex-direction: column;
+  }
+  .SignUp-page .left{
+    width: 100%;
+  }
+  .SignUp-page .right{
+    height: 100vh;
+    width: 100%;
+  }
+  .SignUp-page .right .rcontent{
+    margin: 50px;
+  }
+
+}
